@@ -4,26 +4,20 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   /* Font families */
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Space Grotesk', sans-serif;
+  --font-primary: 'Parkinsans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
 
-  /* Greys */
-  --color-white: #ffffff;
-  --color-light: #f7f7f7;
-  --color-light-gray: #eeeeee;
-  --color-mid-gray: #929AAB;
-  --color-dark-gray: #393E46;
+  /* primary colors  */
+  --color-brand: #1f514c;
+  --color-brand-light: #aeda94;
+
+  /* greys  */
+  --color-grey-light: #eaeae2;
+  --color-grey: #777272;
+
+  --color-white: #fffffb;
   --color-black: #000000;
 
-  /* Accent Colors (Muted Blue & Soft Orange from Linkrow) */
-  --color-accent-blue: #4A6CF7;
-  --color-accent-blue-hover: #3e5ae0;
-  --color-accent-yellow: #FFD15C;
-  --color-accent-pink: #FF6F91;
-
-  /* States */
-  --color-success: #15803d;
-  --color-error: #b91c1c;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -57,8 +51,7 @@ body {
   font-family: var(--font-primary);
   font-size: 1.6rem;
   line-height: 1.6;
-  color: var(--color-dark-gray);
-  background-color: var(--color-light);
+  background-color: var(--color-white);
   transition: background-color 0.3s, color 0.3s;
   min-height: 100vh;
 }
@@ -104,18 +97,22 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
-  font-weight: 600;
+  font-family: var(--font-primary);
+  font-weight: 500;
   line-height: 1.2;
-  color: var(--color-black);
+  color: var(--color-brand);
   overflow-wrap: break-word;
 }
 
 p {
-  color: var(--color-mid-gray);
+  color: var(--color-grey);
   overflow-wrap: break-word;
 }
 
+
+
 `;
+
+  
 
 export default GlobalStyle;
