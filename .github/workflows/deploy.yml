@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write  # ← THIS LINE IS THE FIX!
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
