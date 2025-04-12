@@ -1,7 +1,7 @@
 import { IoInfinite, IoOptionsOutline } from "react-icons/io5";
 import styled from "styled-components";
-import Button from "../styles/ui/Button";
-import AboutCard from "../styles/ui/AboutCard";
+import Button from "../ui/Button";
+import AboutCard from "../ui/AboutCard";
 import { TbSettings2 } from "react-icons/tb";
 import { PiRocketLight } from "react-icons/pi";
 
@@ -79,7 +79,7 @@ const CardData = [
         heading: "Effortless Integration",
         content: "Seamlessly integrate our platform with your existing HR tools for a  hiring experience."
     }
-    
+
 ]
 
 
@@ -95,8 +95,8 @@ function AboutSection() {
                 <Button>About TalentLink</Button>
             </StyledTitleWrapper>
             <StyledCardWrapper>
-                {CardData.map(card=>(
-                    <AboutCard {...card} />
+                {CardData.map(card => (
+                    <AboutCard key={card.heading} {...card} />
                 ))}
             </StyledCardWrapper>
         </StyledAboutSection>

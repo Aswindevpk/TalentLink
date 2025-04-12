@@ -1,9 +1,17 @@
 import styled from "styled-components";
-import Brand from "../styles/ui/Brand";
-import NavMenu from "../styles/ui/NavMenu";
-import Button from "../styles/ui/Button";
+import Brand from "../ui/Brand";
+import NavMenu from "../ui/NavMenu";
+import Button from "../ui/Button";
+import { Container } from "../ui/Container";
+import NavHamburger from "./NavHamburger";
 
-const StyledNav = styled.nav`
+
+const StyledContainer = styled.div`
+  width: 100%;
+  border-bottom: 1px solid var(--color-grey-light);
+`;
+
+const StyledNav = styled(Container)`
   position: sticky;
   top: 0;
   background-color: var(--color-white);
@@ -11,18 +19,32 @@ const StyledNav = styled.nav`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 8rem;
   height: 8rem;
-  border-bottom: 1px solid var(--color-grey-light);
+  padding: 0rem 2rem;
+
+  @media (max-width: 990px) {
+    height: 6.5rem;
+    .hide-on-mobile{
+      display: none;
+    }
+    .show-on-mobile{
+      display: block;
+    }
+  }
+
 `;
+
 
 function Navbar() {
   return (
-    <StyledNav>
-      <Brand />
-      <NavMenu />
-      <Button>Contact us</Button>
-    </StyledNav>
+    <StyledContainer>
+      <StyledNav>
+        <Brand />
+        <NavMenu type="nav" className="hide-on-mobile" />
+        <Button className="hide-on-mobile">Contact us</Button>
+        <NavHamburger className="show-on-mobile" />
+      </StyledNav>
+    </StyledContainer>
   )
 }
 

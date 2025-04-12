@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   --radius-lg: 12px;
 
   /* Layout */
-  --container-width: 1200px;
+  --container-width: 1260px;
   --gutter: 1.5rem;
 }
 
@@ -106,10 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: var(--color-grey);
-  overflow-wrap: break-word;
 }
-
-
 
 `;
 

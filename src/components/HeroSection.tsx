@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import Button from "../styles/ui/Button";
+import Button from "../ui/Button";
 import HeroRightColumn from "./HeroRightColumn";
+import { Container } from "../ui/Container";
 
+const StyledContainer = styled.div`
+  width: 100%;
+  border-bottom: 1px solid var(--color-grey-light);
+`;
 
-const StyledHero = styled.section`
+const StyledHero = styled(Container)`
   display: flex;
   flex-direction: column;
-  padding: 8rem;
+  padding: 8rem 2rem;
   gap: 8rem;
 `;
 
@@ -54,29 +59,31 @@ const StyledHeroFooter = styled.div`
 
 export default function HeroSection() {
   return (
-    <StyledHero>
-      <StyledMain>
-        <StyledContent>
-          <div>
-            <StyledTag><span style={{ color: "var(--color-brand)" }}>250+</span> trusted partners</StyledTag>
-          </div>
-          <StyledHeading>Recruitment process <br></br>with <span style={{ fontWeight: "500" }}>smart solutions.</span></StyledHeading>
-          <p>Linkrow is your trusted partner in recruitment, offering personalized HR solutions that connect top talent with the right opportunities.</p>
-          <StyledCta>
-            <Button>Free Consultation</Button>
-            <Button>Explore our Services</Button>
-          </StyledCta>
-        </StyledContent>
-        <HeroRightColumn />
-      </StyledMain>
-      <StyledHeroFooter>
-        <img src="/company1.svg" alt="Icon"  height="30" />
-        <img src="/company2.svg" alt="Icon"  height="30" />
-        <img src="/company3.svg" alt="Icon"  height="30" />
-        <img src="/company4.svg" alt="Icon"  height="30" />
-        <img src="/company5.svg" alt="Icon"  height="30" />
-        <img src="/company6.svg" alt="Icon"  height="30" />
-      </StyledHeroFooter>
-    </StyledHero>
+    <StyledContainer>
+      <StyledHero>
+        <StyledMain>
+          <StyledContent>
+            <div>
+              <StyledTag><span style={{ color: "var(--color-brand)" }}>250+</span> trusted partners</StyledTag>
+            </div>
+            <StyledHeading>Recruitment process <br></br>with <span style={{ fontWeight: "500" }}>smart solutions.</span></StyledHeading>
+            <p>Linkrow is your trusted partner in recruitment, offering personalized HR solutions that connect top talent with the right opportunities.</p>
+            <StyledCta>
+              <Button>Free Consultation</Button>
+              <Button>Explore our Services</Button>
+            </StyledCta>
+          </StyledContent>
+          <HeroRightColumn />
+        </StyledMain>
+        <StyledHeroFooter>
+          <img src="./company1.svg" alt="Icon" height="30" />
+          <img src="./company2.svg" alt="Icon" height="30" />
+          <img src="./company3.svg" alt="Icon" height="30" />
+          <img src="./company4.svg" alt="Icon" height="30" />
+          <img src="./company5.svg" alt="Icon" height="30" />
+          <img src="./company6.svg" alt="Icon" height="30" />
+        </StyledHeroFooter>
+      </StyledHero>
+    </StyledContainer>
   );
 }
