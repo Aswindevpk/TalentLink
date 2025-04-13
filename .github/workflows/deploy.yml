@@ -27,6 +27,9 @@ jobs:
       - name: Build the app
         run: npm run build
 
+      - name: Add CNAME file
+        run: echo 'brand.aswindev.in' > dist/CNAME  # Replace with your domain
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
