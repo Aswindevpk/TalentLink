@@ -20,7 +20,7 @@ function Brand() {
   return (
     <StyledBrand>
         <IoInfinite size={42}  className="brand-icon"/>
-        <StyledBrandName>TalentLink</StyledBrandName>
+        <StyledBrandName>Pixalytica</StyledBrandName>
     </StyledBrand>
   )
 }

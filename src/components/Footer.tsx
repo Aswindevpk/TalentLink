@@ -82,7 +82,7 @@ const Footer = () => {
       </FooterWrapper>
 
       <FooterBottom>
-        <span>© TalentLink. All Rights Reserved. Licensing</span>
+        <span>© Pixalytica. All Rights Reserved. Licensing</span>
         <span>Designed by Aswindevpk.</span>
       </FooterBottom>
     </FooterContainer>

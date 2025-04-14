@@ -95,7 +95,7 @@ function AboutSection() {
                 </StyledLogoBlock>
                 <h1>Platform designed to simplify and enhance the hiring process.</h1>
                 <p>With personalized solutions tailored to your business needs, we connect you with the best talent quickly and efficiently, helping you build stronger, more effective teams.</p>
-                <Button>About TalentLink</Button>
+                <Button>About Pixalytica</Button>
             </StyledTitleWrapper>
             <StyledCardWrapper>
                 {CardData.map(card => (

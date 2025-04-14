@@ -7,14 +7,16 @@ import NavHamburger from "./NavHamburger";
 
 
 const StyledContainer = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
   border-bottom: 1px solid var(--color-grey-light);
+  background-color: var(--color-white);
 `;
 
 const StyledNav = styled(Container)`
-  position: sticky;
-  top: 0;
-  background-color: var(--color-white);
+  
   display: flex;
   flex-direction: row;
   align-items: center;

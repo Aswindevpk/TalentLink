@@ -80,6 +80,7 @@ const StyledOverlay = styled.div`
 
 const StyledBanner = styled.div`
     position: relative;
+    z-index: 1;
     height: 390px;
     width: 300px;
     top: -4rem;

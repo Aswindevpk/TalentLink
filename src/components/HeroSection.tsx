@@ -86,7 +86,7 @@ export default function HeroSection() {
               <StyledTag><span style={{ color: "var(--color-brand)" }}>250+</span> trusted partners</StyledTag>
             </div>
             <StyledHeading>Recruitment process <br></br>with <span style={{ fontWeight: "500" }}>smart solutions.</span></StyledHeading>
-            <p>Linkrow is your trusted partner in recruitment, offering personalized HR solutions that connect top talent with the right opportunities.</p>
+            <p>Pixalytica is your trusted partner in recruitment, offering personalized HR solutions that connect top talent with the right opportunities.</p>
             <StyledCta>
               <Button>Free Consultation</Button>
               <Button>Explore our Services</Button>
