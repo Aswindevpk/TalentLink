@@ -22,10 +22,11 @@ const StyledTitleWrapper = styled.div`
   align-items: center;
   max-width: 670px;
   gap: 3rem;
+  padding: 0rem 2rem;
 
   h1{
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(3rem, 3vw, 4rem);
   }
 
   p{
@@ -52,7 +53,9 @@ const StyledLogoBlock = styled.div`
 
 const StyledCardWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
+    padding: 2rem;
     justify-content: space-around;
 `;
 

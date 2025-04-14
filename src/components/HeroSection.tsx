@@ -13,12 +13,29 @@ const StyledHero = styled(Container)`
   flex-direction: column;
   padding: 8rem 2rem;
   gap: 8rem;
+
+  @media (max-width: 990px) {
+    padding: 4rem 2rem;
+  } 
+
+  @media (max-width: 760px) {
+    padding: 2rem 1rem;
+  } 
 `;
 
 const StyledMain = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+  gap: 6rem;
+  @media (max-width: 990px) {
+    gap: 1rem;
+  } 
+
+  @media (max-width: 760px) {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  } 
 `;
 
 const StyledContent = styled.div`
@@ -29,7 +46,7 @@ const StyledContent = styled.div`
 
 const StyledTag = styled.span`
   font-weight:400;
-  font-size:1.6rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   display: inline-block;
   padding:0.2rem 0.8rem;
   color:var(--color-grey);
@@ -39,20 +56,22 @@ const StyledTag = styled.span`
 
 const StyledHeading = styled.h1`
   font-weight:300;
-  font-size:5.4rem;
+  font-size: clamp(3rem, 25vw, 5.4rem);
   line-height: 6.5rem;
   color:var(--color-brand);
 `;
 
 const StyledCta = styled.span`
-display: flex;
-gap: 1.6rem;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1.6rem;
 `;
 
 const StyledHeroFooter = styled.div`
   display: flex;
   justify-content: space-evenly;
-  gap: 1.6rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 `;
 
 
